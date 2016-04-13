@@ -48,10 +48,10 @@
       radar.setThirdQuadrant(Quadrants[data.configuration.quadrants[2]]);
       radar.setFourthQuadrant(Quadrants[data.configuration.quadrants[3]]);
 
-      var radarGraph = new tr.graphing.Radar(800, radar);
+      var radarGraph = new tr.graphing.Radar(1080, radar);
       radarGraph.init('#radar').plot();
-//    var refTable = new tr.graphing.RefTable(radar);
-//    refTable.init('#ref-table').render();
+      var refTable = new tr.graphing.RefTable(radar);
+      refTable.init('#ref-table').render();
   }
 
 </script>
