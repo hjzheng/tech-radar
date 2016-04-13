@@ -1,0 +1,38 @@
+{
+  "configuration" : {
+     "cycles": ["Adopt", "Trial", "Assess", "Hold"],
+     "quadrants": ["Tools", "Techniques", "Platforms", "Languages & Frameworks"]
+  },
+
+  "Tools" : [
+    {"name": "D3", "cycle": "adopt", "changed": false},
+    {"name": "Dependency Management for JavaScript", "cycle": "adopt", "changed": true},
+    {"name": "Ansible", "cycle": "trial", "changed": true},
+    {"name": "Calabash", "cycle": "trial", "changed": true},
+    {"name": "Docker", "cycle": "assess", "changed": false}
+  ],
+
+  "Techniques" : [
+    {"name": "HTML5 storage instead of cookies", "cycle": "adopt", "changed": false},
+    {"name": "Perimeterless enterprise", "cycle": "adopt", "changed": true},
+    {"name": "Datensparsamkeit", "cycle": "trial", "changed": true},
+    {"name": "Siloed metrics", "cycle": "trial", "changed": true},
+    {"name": "Velocity as productivity", "cycle": "hold", "changed": false}
+  ],
+
+  "Platforms" : [
+    {"name": "NodeJS", "cycle": "adopt", "changed": false},
+    {"name": "MongoDB", "cycle": "adopt", "changed": true},
+    {"name": "SPDY", "cycle": "trial", "changed": true},
+    {"name": "Web Components standard", "cycle": "hold", "changed": true},
+    {"name": "Akka", "cycle": "assess", "changed": false}
+  ],
+
+  "Languages & Frameworks" : [
+    {"name": "Scala", "cycle": "adopt", "changed": false},
+    {"name": "Dart", "cycle": "adopt", "changed": true},
+    {"name": "JSF", "cycle": "trial", "changed": true},
+    {"name": "Play Framework", "cycle": "trial", "changed": true},
+    {"name": "Yeoman", "cycle": "assess", "changed": false}
+  ]
+}
