@@ -52,16 +52,20 @@ tr.graphing.RefTable = function (radar) {
     Object.keys(blips).forEach(function (cycle) {
         html += '<tr class="radar-ref-status-group"><td colspan="3">' + cycle + '</td></tr>';
 
-        blips[cycle].forEach(function (blip) {
-          html += '<tr>' +
-                    '<td>' + blip.number() + '</td>' +
-                    '<td>' + blip.name() + '</td>' +
-                    '<td>' + blip.description() + '</td>' +
-                  '</tr>';
+        blips[cycle].forEach(function (blip, index) {
+
+          if(index%2 === 0) {
+            html +=  '<tr>' +
+            '<td>' + blip.number() + '</td>' +
+            '<td>' + blip.name() + '</td>';
+          } else {
+             html +=  '<td>' + blip.number() + '</td>' +
+                 '<td>' + blip.name() + '</td>';
+          }
         });
     });
 
-    html += '</table>';
+    html += '</tr></table>';
 
     injectionElement.innerHTML = html;
   };
